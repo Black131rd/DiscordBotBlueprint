@@ -1,0 +1,7 @@
+services:
+  discord-bot:
+    build: ./bot
+    environment:
+      - DISCORD_TOKEN=${DISCORD_TOKEN}
+    env_file:
+      - .env
